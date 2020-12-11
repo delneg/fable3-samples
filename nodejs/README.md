@@ -11,6 +11,7 @@ This is a simple Fable Node.js app.
 ## Building and running the app
 
 * Install JS dependencies: `npm install`
+* Install fable dotnet tool: `dotnet tool restore`
 * Build Node.js app `npm run build`
 * Try Node.js app `node build/App.js`
 
