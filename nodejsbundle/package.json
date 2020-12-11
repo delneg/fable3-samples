@@ -1,19 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "build": "npx webpack --config webpack.config.js",
-    "test": "node build/main.js"
+    "build": "dotnet fable src -o build --run webpack --config webpack.config.js",
+    "test": "node build/App.compiled.js"
   },
   "dependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "babel-loader": "^8.0.6",
-    "fable-compiler": "^2.4.18",
-    "fable-loader": "^2.1.8",
-    "isomorphic-fetch": "^2.2.1",
-    "webpack": "^4.42.0"
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "isomorphic-fetch": "^3.0.0",
+    "webpack": "^5.10.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^4.2.0"
   }
 }

@@ -19,26 +19,16 @@ module.exports = {
     __dirname: false,
     __filename: false,
   },
-  entry: './src/App.fsproj',
+  entry: './build/main.js',
   output: {
     path: path.join(__dirname, "./build"),
-    filename: 'App.js',
+    filename: 'App.compiled.js',
     library:"app",
     libraryTarget: 'commonjs'
   },
   plugins: [ ],
   module: {
     rules: [{
-        test: /\.fs(x|proj)?$/,
-        use: {
-          loader: "fable-loader",
-          options: {
-            babel: babelOptions,
-            define: [] 
-          }
-        }
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
