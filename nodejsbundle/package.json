@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "dotnet fable src -o build --run webpack --config webpack.config.js",
-    "test": "node build/App.compiled.js"
+    "start": "dotnet fable watch src --run webpack --watch",
+    "build": "dotnet fable src --run webpack",
+    "test": "node build/main.js"
   },
   "dependencies": {
     "@babel/core": "^7.12.10",

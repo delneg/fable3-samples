@@ -19,10 +19,10 @@ module.exports = {
     __dirname: false,
     __filename: false,
   },
-  entry: './build/main.js',
+  entry: './src/App.fs.js',
   output: {
     path: path.join(__dirname, "./build"),
-    filename: 'App.compiled.js',
+    filename: 'main.js',
     library:"app",
     libraryTarget: 'commonjs'
   },
